@@ -50,6 +50,7 @@ public class Ex2_if_else {
         //삼항연산자로 구현    
         
             age = 32; //재활용. int age = 32;로 자료형까지 반복하면 오류.
+            //str = ""; 로 재활용해도 됨. 
             String str2 = (age >= 30) ? "드실만큼 드셨군요" : "조금더 드셔도 돼요";
             System.out.println(str2);
         //모든 삼항연산자는 if-else문으로 대체 가능하다.    
