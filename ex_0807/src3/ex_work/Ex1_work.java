@@ -28,6 +28,7 @@ public class Ex1_work {
        System.out.print("연도 : ");
        int year = sc.nextInt();
 
+       /* 
        if (year % 400 == 0) {
         System.out.println(year + "년은 윤년입니다");
        } else if (year % 100 == 0) {
@@ -37,5 +38,14 @@ public class Ex1_work {
        } else {
         System.out.println(year + "년은 평년입니다");
        }
+       */
+     
+       if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+        System.out.println(year + "년은 윤년입니다");
+       } else {
+        System.out.println(year + "년은 평년입니다");
+       }
+
     }//main
 }
+//연도를 추가로 입력하려면 while문을 써야 함
