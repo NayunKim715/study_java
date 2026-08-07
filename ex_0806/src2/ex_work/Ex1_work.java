@@ -10,22 +10,21 @@ public class Ex1_work {
         int age = 14;
         //int height = 145; //소숫점 고려하면 double이나 float
         int height = 160;
-        String res = "";
+        String str = "";
                 
         if (age >= 15 || height >= 150) { //OR 연산은 둘 다 거짓일 때만 거짓이므로 둘 다 해볼 수밖에 없다.
-            res = "탑승가능";
+            str = "탑승가능";
         } else {
-            res = "탑승불가";
+            str = "탑승불가";
         }
                 
-        System.out.println(res);
+        System.out.println(str);
 
         // 삼항연산자로
         age = 14;
         height = 145;
         String res1 = (age >= 15 || height >= 150) ? "탑승가능" : "탑승불가";
         System.out.println(res1);
-
 
         
     }//main
