@@ -8,12 +8,14 @@ public class Ex7_multiFor {
         // 2 x 9 = 18 3 x 9 = 27 4 x 9 = 36 ... 9 x 9 = 81
 
         for (int i = 1; i <= 9; i++) {
-            for (int dan = 2; dan <= 9; dan++) {
-                //System.out.printf("%d x %d = %d\t", dan, i, dan * i);
-                System.out.printf("%d x %d = %d", dan, i, dan * i);
-            } // inner
+            for (int j = 2; j <= 9; j++) {
+                System.out.printf(
+                    "%d x %d = %d\t", j, i, j * i);
+                 } // inner
             System.out.println();
         } // outer
 
     }// main
 }
+//i=1일 때 j는 2에서 9까지 8회전. 
+// 그럼 앞에 i가 아닌 j가 먼저 들어가는 게 맞다.
