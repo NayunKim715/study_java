@@ -1,5 +1,7 @@
 package src4.ex6_work;
 
+import java.util.Scanner;
+
 public class Ex6_work {
     public static void main(String[] args) {
         //키보드에서 출력될 수열의 갯수를 지정하고
@@ -10,5 +12,23 @@ public class Ex6_work {
         //입력 : 9
         //1 1 2 3 5 8 13 21 34
 
-    }//main
+        Scanner sc = new Scanner(System.in); 
+        System.out.print("입력 : ");
+        int cnt = sc.nextInt();//for문 몇 바퀴 돌 건지를 cnt 변수가 판별
+
+        int n1 = 1;
+        int n2 = 0;
+        int n3 = 0;
+
+        for( int i = 0; i < cnt; i++ ){
+
+            n2 = n3;
+            n3 = n1;
+            n1 = n2 + n3;
+            System.out.print( n3 + " ");
+
+        }//for
+
+
+   }//main
 }

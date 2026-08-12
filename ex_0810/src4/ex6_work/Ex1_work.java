@@ -23,10 +23,7 @@ public class Ex1_work {
                break; 
             }
 
-
         }//for
-
-
 
     }//main
 }
