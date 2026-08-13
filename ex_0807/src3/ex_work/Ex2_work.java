@@ -24,10 +24,10 @@ public class Ex2_work {
             System.out.println("2 ~ 9 사이의 값을 입력하세요.");
         } else {
             for (int i = 1; i <= 9; i++) {
-                System.out.println(dan + " * " + i + " = " + (dan * i));
+                //System.out.println(dan + " * " + i + " = " + (dan * i));
                
                 //결과를 println이 아닌 printf로 출력
-                System.out.printf("%d * %d = %d\n", dan, i, (dan*i));
+                //System.out.printf("%d * %d = %d\n", dan, i, (dan*i));
 
                 //2단은 2*5이후로 두 자리, 그 앞은 한자리
                 System.out.printf("%d * %d = %02d\n", dan, i, (dan*i));
