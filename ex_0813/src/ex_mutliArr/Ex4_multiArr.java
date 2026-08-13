@@ -1,0 +1,27 @@
+package ex_mutliArr;
+
+public class Ex4_multiArr {
+    public static void main(String[] args) {
+        char[][] cArr = new char[2][];
+        cArr[0] = new char[2];
+        cArr[1] = new char[3];
+
+        cArr[0][0] = '안';
+        cArr[0][1] = '녕';
+
+        cArr[1][0] = '하';
+        cArr[1][1] = '세';
+        cArr[1][2] = '요';
+
+        //안녕
+        //하세요
+        for( int i = 0; i < cArr.length; i++ ){ 
+            for( int j = 0; j < cArr[i].length; j++ ){ 
+                System.out.print( cArr[i][j]);
+            //System.out.print( cArr[i][j] + " " ); //안 녕 - 하 세 요
+            }//inner
+            System.out.println();
+        }//outer
+
+    }//main
+}
