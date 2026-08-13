@@ -12,7 +12,6 @@ public class Ex2_continue {
                 System.out.println("case 1");
                 continue; //break 대신 continue 씀.   
 
-
           }//switch
 
         }//for

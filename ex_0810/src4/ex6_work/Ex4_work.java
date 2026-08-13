@@ -17,9 +17,8 @@ public class Ex4_work {
     System.out.print("수2 : ");
     int su2 = sc.nextInt();
 
-    int su3 = su1 < su2 ? su1 : su2; // su1과 su2 중 작은 값을 su3에 저장 
-    // 지각. 영상 다시 보기. 이건 인공지능이 채운 것
-    
+    int su3
+    su3 = su2; //지각 뭔가 놓침
    
 
     int i = su1;
@@ -48,4 +47,4 @@ public class Ex4_work {
 }//class
 
 
-
+//지각
