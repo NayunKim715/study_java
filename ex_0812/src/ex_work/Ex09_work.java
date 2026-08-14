@@ -25,11 +25,7 @@ public class Ex09_work {
           i++;
 
         }//outer
-        
-
-
-
-
+    
     }//main
 }
 
