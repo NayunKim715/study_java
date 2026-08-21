@@ -6,6 +6,14 @@ public class Vending {
     private int money;
 
     //자판기에서 관리할 음료수를 준비
+    public Vending(){
+        cans[0] = new Can("환타", 1000);
+        cans[1] = new Can("콜라", 1100);
+        cans[2] = new Can("사이다", 1200);
+        cans[3] = new Can("몬스터", 1300);
+        cans[4] = new Can("맥콜", 1400);
+    }
+    /* 8월 21일 init 메서드 통째로 날림
     public void init(){
         for( int i = 0; i < cans.length; i++ ){
             cans[i] = new Can();
@@ -27,6 +35,7 @@ public class Vending {
         cans[4].setPrice(1500);
 
     }//init()
+    */
 
     /* 자판기의 기능 */
     //사용자의 돈을 받는다

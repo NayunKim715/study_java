@@ -9,7 +9,7 @@ public class Vmain {
         int money = sc.nextInt();
         
         Vending ven = new Vending();
-        ven.init();
+        //ven.init(); //8월 21일 이제 init 호출 못하지만 음료수 5개 세팅 완료
 
         ven.showDrink(money);
 
