@@ -1,18 +1,18 @@
 package ex2_fileinput;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class Ex5_work {
     public static void main(String[] args) throws IOException{
         //C:/myFile/work2.txt의 내용을 읽어서
-        //회문인지 판단하시오
         //-----------------
         //토마토은(는) 회문입니다
         String path = "C:/myFile/work2.txt";
         File f = new File(path);
-        byte[] console = new byte[];
+        byte[] console = new byte[ (int)f.length() ];
         FileInputStream fis = null;
 
         String ori = "";
@@ -20,6 +20,7 @@ public class Ex5_work {
 
         try {
             fis = new FileInputStream(f);
+            //int code = 0;
             fis.read( console );
             ori = new String(console).trim();
 
@@ -36,10 +37,13 @@ public class Ex5_work {
             }else{
                 System.out.println(ori + "은(는) 회문 아님");
             }
-            //int code = 0;
+            
         } catch (Exception e) {
-            // TODO: handle exception
             e.printStackTrace(); //오류 확인
+        } finally {
+            if( fis != null ){
+                fis.close();
+            } 
         }
 
     }//main

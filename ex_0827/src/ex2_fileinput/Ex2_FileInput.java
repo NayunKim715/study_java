@@ -8,7 +8,8 @@ public class Ex2_FileInput {
 
         String path = "C:/myFile/test.txt";
         File f = new File(path);
-        byte[] read = new byte[100];
+        //byte[] read = new byte[100];
+        byte[] read = new byte[ (int)f.length() ];
         FileInputStream fis = null;// 생성은 안에서 할거니까 객체 준비만
 
         if( f.exists() ){

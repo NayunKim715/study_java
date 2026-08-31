@@ -2,6 +2,7 @@ package ex8_filewriter;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.io.BufferedWriter;
 
 public class Ex2_BufWriter {
     public static void main(String[] args) {
