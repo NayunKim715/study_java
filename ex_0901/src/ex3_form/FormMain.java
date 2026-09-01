@@ -1,10 +1,7 @@
 package ex3_form;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.TextEvent;
 import java.awt.event.TextListener;
 import java.awt.event.WindowAdapter;
 import java.io.BufferedWriter;
@@ -131,14 +128,11 @@ public class FormMain {
                     if(fw != null) fw.close();
 
                 } catch (Exception e2) {
-                    // TODO: handle exception
+
                 }
             }
-            
         }
-        
       });
-
 
       f.add(tf);
       f.add(btn);
@@ -158,3 +152,5 @@ public class FormMain {
     
    }//main 
 }
+//import java.awt.event.KeyEvent;라고 치면 The import java.awt.event.KeyEvent is never used
+//KeyEvent라고만 치면 상단의 import가 문제되지 않는다.
