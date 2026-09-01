@@ -14,5 +14,3 @@ public class Ex1_Frame {
         }//main
       
     }
-
-//멀쩡한 거 지움. 복원

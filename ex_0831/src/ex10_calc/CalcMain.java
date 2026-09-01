@@ -36,7 +36,6 @@ public class CalcMain {
 
             //프레임에 숫자 버튼들을 추가
             f.add( nums[i] );
-
         }//for
 
         //C버튼 - 다 지우는 버튼
@@ -57,15 +56,13 @@ public class CalcMain {
            //연산자 버튼들에게 이벤트 감지자 등록
            opers[i].addActionListener(listener);
            f.add(opers[i]);
-
         }//for
-
 
         //프레임에 레이블을 추가
         f.add(lb);
 
         f.setVisible(true);
-
+        
         f.addWindowListener( new WindowAdapter() { 
            public void windowClosing(java.awt.event.WindowEvent e) {
               System.exit(0);
